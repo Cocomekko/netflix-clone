@@ -1,0 +1,239 @@
+*{
+    font-style: normal;
+    font-family:"Roboto";
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+h1{
+    color: white;
+    font-size: 48px;
+    margin: 0;
+    font-weight: 900;
+}
+p{color: white;
+    font-size: 24px;
+}
+#landing-page-section{
+    background-position: center;
+    background-image: url("assets/landing_page_background.jpg");
+}
+.background{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0px, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+}
+nav{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 48px;
+}
+.red-btn{
+    color: white;
+    background-color: #E50914;
+    border-radius: 3px;
+    border: none;
+}
+select{
+    margin: 0 20px 0 0;
+    padding: 4px 10px;
+    color: white;
+    border: solid white 1px;
+    background-color: rgba(255, 255, 255, 0.13);
+    border-radius: 3px;
+    width: 124px;
+    height: 32px;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+option{
+    color: black;
+}
+.sign-in-btn{
+    height: 32px;
+    font-weight: bold;
+    width: 77px;
+}
+.landing-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 90vh;
+}
+.landing-page-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.lp-get-started{
+    display: flex;
+    justify-content: space-between;
+    height: 56px;
+    width: 586px;
+    align-items: center;
+}
+.lp-get-started > input{
+    height: 50px;
+    flex-grow: 1;
+    width: 338px;
+    margin-right: 5px;
+    padding: 5px 15px;
+    box-sizing: border-box;
+    
+    background-color: #2c2c2c73;
+    border: solid grey 1px;
+    border-radius: 3px;
+    color: white;
+    outline: none;
+}
+.get-started-btn{
+    width: 207px;
+    height: 44px;
+    padding: 3px;
+    box-sizing: content-box;
+    font-size: 25px;
+}
+#footer-page-section, #faq-page-section, #create-page-section, #watch-page-section, #enjoy-page-section, #download-page-section{
+    padding: 50px 75px;
+    display: flex;
+    justify-content: center;
+}
+.ep-img-content{
+    order: 1 !important;
+}
+.faq-page, .create-page, .enjoy-page, .download-page, .watch-page{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+}
+.create-page-content, .enjoy-page-content, .download-page-content, .watch-page-content{
+    width: 50%;
+}
+.ep-img-content, .create-page-img, .img-content{
+    width: 505px;
+    order: -1;
+    display: flex;
+    position: relative;
+}
+.ep-img-content > video, .img-content > video{
+    position: absolute;
+    left: 13.06%;
+    top: 12%;
+    z-index: -1;
+}
+.downloading-box{
+    height: 84px;
+    position: absolute;
+    width: 252px;
+    border: solid gray 2px;
+    border-radius: 10px;
+    padding: 5px 10px;
+    background-color: black;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 5%;
+    left: 22%;
+}
+.db-content-heading{
+    font-size: 16px;
+}
+.db-content-para{
+    font-size: 14px;
+    color: #0071eb
+}
+.downloading-logo{
+    height: 50px;
+    width: 48px;
+    background-position: center;
+    background-size: 100%;
+    background-image: url("assets/download-icon.gif");
+}
+.wp-img-content{
+    order:0;
+}
+.wp-img-content > video{
+    left: 17%;
+    top: -20%;
+}
+.faq-page{
+    flex-direction: column;
+}
+.faq-questions{
+    margin-top: 20px;
+    width: 100%;
+}
+details{
+    color: white;
+    width: 100%;
+    margin-top: 7px;
+}
+summary{
+    padding: 24px;
+    transition: 0.2s;
+    background-color: #2d2d2d;;
+    margin-bottom: 1px;
+    font-size: 24px;
+    transition: 0.3s;
+}
+summary:hover{
+    background-color: rgb(80, 80, 80);
+}
+.summary-content{
+    font-size: 24px;
+    background-color: #2d2d2d;
+    padding: 24px;
+}
+.ready-para{
+    font-size: 20px;
+    margin-top: 35px;
+}
+hr{
+    width: 100%;
+    border: none;
+    margin:0;
+    height: 8px;
+    background-color: #232323;
+}
+#footer-page-section{
+    justify-content: flex-start;
+    flex-direction: column;
+    color: lightgray;
+}
+.contact-no-para{
+    font-size: 16px;
+    color: darkgray;
+}
+.contact-no-para > span{
+    text-decoration: underline;
+}
+.footer-options{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 140px;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+}
+.footer-options > li{
+    margin: 8px 0;
+}
+li>a{
+  color: darkgray;
+}
+.author{
+    color: darkgray;
+    margin: 24px 0 0 0;
+    font-size: 14px;
+}
